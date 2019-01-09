@@ -7,16 +7,12 @@ bot.on("ready", async () => {
 
 });
 
-let sc = message.guild.memberCount;
-
 bot.on("guildMemberAdd", function(member) {
-    member.guild.channels.find("name", "logs").sendMessage(member.toString() + ' has joined the server.\nServer Count: ${sc}');
+    member.guild.channels.find("name", "logs").sendMessage(member.toString() + ' has joined the server.');
 });
 
-let sc = message.guild.memberCount;
-
 bot.on("guildMemberRemove", function(member) {
-  member.guild.channels.find("name", "logs").sendMessage(member.toString() + ' has left the server.\nServer Count: ${sc}');
+  member.guild.channels.find("name", "logs").sendMessage(member.toString() + ' has left the server.');
 });
 
 bot.on('message', message => {
