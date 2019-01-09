@@ -7,13 +7,13 @@ bot.on("ready", async () => {
 
 });
 
-let sc = message.guild.memberCount
+let sc = message.guild.memberCount;
 
 bot.on("guildMemberAdd", function(member) {
     member.guild.channels.find("name", "logs").sendMessage(member.toString() + ' has joined the server.\nServer Count: ${sc}');
 });
 
-let sc = message.guild.memberCount
+let sc = message.guild.memberCount;
 
 bot.on("guildMemberRemove", function(member) {
   member.guild.channels.find("name", "logs").sendMessage(member.toString() + ' has left the server.\nServer Count: ${sc}');
