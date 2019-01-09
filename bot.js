@@ -1,13 +1,8 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-bot.on('ready', () => {
-    console.log('I am ready!');
-});
-
 bot.on("ready", async () => {
-
-  console.log(`${bot.user.username} is online on ${bot.guilds.size} servers!`);
+    
   bot.user.setActivity(`testbot`, {type: "WATCHING"});
 
 });
@@ -26,5 +21,4 @@ bot.on('message', message => {
   	}
 });
 
-// THIS  MUST  BE  THIS  WAY
 bot.login(process.env.BOT_TOKEN);
