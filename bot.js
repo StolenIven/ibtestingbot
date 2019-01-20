@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-bot.on("ready", function() {
-  bot.user.setActivity(`testbot`, {type: "WATCHING"});
+bot.on('ready', function() {
+    bot.user.setActivity(" development")
 });
 
 bot.on("guildMemberAdd", function(member) {
