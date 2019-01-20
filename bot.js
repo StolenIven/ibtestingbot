@@ -1,10 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
 
-bot.on('ready', () => {
-    bot.user.setActivity(" development")
-});
-
 bot.on("guildMemberAdd", function(member) {
     member.guild.channels.find("name", "logs").sendMessage(member.toString() + ' has joined the server.');
 });
