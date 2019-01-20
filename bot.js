@@ -23,7 +23,7 @@ bot.on('message', message => {
 
 bot.on('message', message => {
     if (message.content === 'l-detail') {
-        message.reply('This bot requires a #log channel.\n\nMade by iben#0001. © Logger 2019')
+        message.channel.send('This bot requires a #log channel.\n\nMade by iben#0001. © Logger 2019')
   	}
 });
 
